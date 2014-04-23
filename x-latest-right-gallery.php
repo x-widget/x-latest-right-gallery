@@ -24,7 +24,7 @@ $list = g::posts( array(
 			$_wr_content = db::result("SELECT wr_content FROM $g5[write_prefix]$_bo_table WHERE wr_id='$_wr_id'");
 			$image_from_tag = g::thumbnail_from_image_tag( $_wr_content, $_bo_table, 233, 368 );
 			$img = $image_from_tag;
-			if ( empty($img) ) $img = x::url()."widget/$widget_config[name]/img/no_image.png";
+			if ( empty($img) ) $img = $widget_config['url']."/img/no_image.png";
 		}
 	} else $img = $latest_skin_url."/img/default_banner.png";
 	?>
