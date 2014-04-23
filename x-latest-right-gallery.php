@@ -26,7 +26,7 @@ $list = g::posts( array(
 			$img = $image_from_tag;
 			if ( empty($img) ) $img = $widget_config['url']."/img/no_image.png";
 		}
-	} else $img = $latest_skin_url."/img/default_banner.png";
+	} else $img = $widget_config['url']."/img/default_banner.png";
 	?>
 	
 	<div class='right-post' style="background: url('<?=$img?>')">
